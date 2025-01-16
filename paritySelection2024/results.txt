@@ -1,0 +1,11 @@
+ABP_ABP_(datasize=2_capacity=1_windowsize=1)eq=branching-bisim.gm.bz2.ehoa: True
+TwoCountersInRangeM1.tlsf.ehoa: False
+TwoCountersRefinedRefined.tlsf.ehoa: False
+TwoCountersInRangeA3.tlsf.ehoa: False
+Zoo10.tlsf.ehoa: False
+TwoCountersInRangeM2.tlsf.ehoa: False
+TwoCountersInRangeA4.tlsf.ehoa: False
+buchi.tlsf.ehoa: True
+UnderapproxDemo2.tlsf.ehoa: False
+TwoCountersInRangeM5.tlsf.ehoa: False
+Zoo0.tlsf.ehoa: True

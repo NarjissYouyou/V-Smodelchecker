@@ -1,0 +1,15 @@
+digraph G {
+    start [shape="none", label=""];
+    start -> 0;
+    0 [shape="diamond", peripheries=1, style="filled", fillcolor="pink"];
+    1 [shape="circle", peripheries=1, style="filled", fillcolor="pink"];
+    2 [shape="circle", peripheries=1, style="filled", fillcolor="pink"];
+    0 -> 0 [label="acc & !p\n {1}"];
+    0 -> 1 [label="!acc & !p\n {1}"];
+    0 -> 2 [label="p\n {1}"];
+    1 -> 0 [label="acc & !p\n {3}"];
+    1 -> 1 [label="!acc & !p\n {2}"];
+    1 -> 2 [label="p\n {1}"];
+    2 -> 2 [label="!acc\n {1}"];
+    2 -> 2 [label="acc\n {2}"];
+}

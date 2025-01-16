@@ -1,0 +1,20 @@
+digraph G {
+    start [shape="none", label=""];
+    start -> 0;
+    0 [shape="circle", peripheries=1, style="filled", fillcolor="pink"];
+    1 [shape="circle", peripheries=1, style="filled", fillcolor="pink"];
+    2 [shape="circle", peripheries=1, style="filled", fillcolor="pink"];
+    3 [shape="circle", peripheries=1, style="filled", fillcolor="pink"];
+    0 -> 0 [label="ack & !cancel\n {0}"];
+    0 -> 1 [label="!ack & !cancel\n {0}"];
+    0 -> 2 [label="!ack & cancel\n {0}"];
+    0 -> 3 [label="ack & cancel\n {0}"];
+    1 -> 1 [label="!cancel & !grant & !req\n {0}"];
+    1 -> 1 [label="!cancel & !grant & req\n {1}"];
+    1 -> 1 [label="!cancel & grant\n {2}"];
+    1 -> 2 [label="cancel\n {0}"];
+    2 -> 2 [label="!grant\n {1}"];
+    2 -> 2 [label="grant\n {2}"];
+    3 -> 2 [label="!ack\n {0}"];
+    3 -> 3 [label="ack\n {0}"];
+}
